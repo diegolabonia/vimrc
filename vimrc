@@ -12,6 +12,7 @@ set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
+set ignorecase
 
 set nowrap
 
@@ -27,7 +28,11 @@ call plug#begin('~/.vim/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    Plug 'jaredgorski/spacecamp'
+    Plug 'dikiaap/minimalist'
 call plug#end()
+
+colorscheme minimalist
 
 "fzf
 nnoremap <C-p> :GFiles<CR>
