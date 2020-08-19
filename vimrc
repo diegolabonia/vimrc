@@ -13,7 +13,9 @@ set shiftwidth=4
 set expandtab
 set smartindent
 set ignorecase
-
+set laststatus=2 " Always show statusline
+set list " show tab characters
+set listchars=tab:>-
 set nowrap
 
 "Install Plug automatically
@@ -39,7 +41,7 @@ nnoremap <C-p> :GFiles<CR>
 
 "------------------coc------------------
 " Give more space for displaying messages.
-set cmdheight=2
+"set cmdheight=2
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
@@ -79,3 +81,5 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+set statusline=%<%f\ %h%m%r%=%y\ %{&fileformat}\.%{&fileencoding?&fileencoding:&encoding}\ (%l,%c)\ %P
