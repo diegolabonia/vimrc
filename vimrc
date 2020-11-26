@@ -8,10 +8,6 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 set noerrorbells
-set tabstop=4 softtabstop=4
-set shiftwidth=4
-set expandtab
-set smartindent
 set ignorecase
 set laststatus=2 " Always show statusline
 set list " show tab characters
@@ -83,3 +79,12 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 set statusline=%<%f\ %h%m%r%=%y\ %{&fileformat}\.%{&fileencoding?&fileencoding:&encoding}\ (%l,%c)\ %P
+
+" TABS
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set autoindent
+set colorcolumn=80
