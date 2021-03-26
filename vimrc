@@ -42,6 +42,7 @@ colorscheme minimalist
 
 "fzf
 nnoremap <C-p> :GFiles<CR>
+nnoremap <C-f> :Files<CR>
 
 "------------------coc------------------
 " Give more space for displaying messages.
