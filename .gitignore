@@ -1,4 +1,5 @@
 undodir/%*
+undo-dir/
 autoload/
 plugged/
 .netrwhist
